@@ -27,7 +27,7 @@
         line: "ASG_TEST=true"
 
     - name: Run artisan migrate
-      shell: 'php artisan migrate --force'
+      shell: 'php artisan migrate --force --isolated'
       args:
         chdir: "{{ app_directory }}"
 
